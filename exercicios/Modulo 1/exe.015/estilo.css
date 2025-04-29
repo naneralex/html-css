@@ -1,0 +1,24 @@
+/*Criando uma regra sempre começa com o @ e sempre é usado no ínicio do css
+o @charset "UTF-8" serve para não pegar acentuação igual no html */
+@charset "UTF-8";
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    }
+        
+ p {
+    text-align: justify
+    }
+
+h1 {
+   color: maroon;
+   background-color: goldenrod;
+    }
+
+h2 {
+    color: darkred;
+    }
+
+

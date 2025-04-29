@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inserindo Vídeos com HTML5</title>
+
+</head>
+<body>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor</p>
+
+    <!-- Desse modo, o consumo de banda fica inviável para o cliente.
+     Deve seguir essa sequência caso deseje hospedar o vídeo no próprio site. 
+     
+     width para redimensionar o vídeo (não autera o tamanho em mb)
+     poster define a capa/tumb do vídeo
+     controls mostra o player do video para poder da inicio e controlar
+     autoplay para iniciar automaticamente
+     loop para repetir ao final do video -->
+
+    <video width="500" poster="imagens/limoes-capa.png" controls autoplay loop>
+        <source src="midea/meu-video.mp4" type="video/mp4">
+        <source src="midea/meu-video.m4v" type="video/m4v">
+        <source src="midea/meu-video.webm" type="video/webm">
+        <source src="midea/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+    </video>
+
+    <!-- Abre o vídeo do youtube, clica em compartilhar e incorporar e copia o codigo que aparece e cola direto, sem tag sem nada.
+    dessa forma não vai consumir dados do site.
+    Hospeda o site no youtube, limita apenas para assinate e manda pro site pelo codigo disponibilizado pelo youtube-->
+    <h1>Inserindo vídeo do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=z2Ci9Pgb2m8_8Nem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    
+</body>
+</html>

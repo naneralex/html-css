@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fontes externas/baixadas</title>
+
+    <style>
+        @font-face {
+            font-family: 'Love'; /* eu msm que defino o nome*/
+            src: url('fonts/love larry ttf.ttf') format(truetype); /*posso colocar mais de um url*/
+            font-weight: normal;
+            font-style: normal;
+
+            /*Tipos de format()
+            - opentype (otf)
+            - truetype (ttp)
+            - embedded-opentype
+            - truetype-aat (Aplle Advanced Typography)
+            - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'love', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facere incidunt earum voluptatem sed neque ut magnam veniam assumenda perferendis nihil ducimus non ab, architecto quidem quasi, odio ipsa sint?</p>
+    
+</body>
+</html>
