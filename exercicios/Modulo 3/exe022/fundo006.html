@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
 
 </head>
 
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center;
@@ -17,6 +18,16 @@
             background-size: cover;
             /*cover - vai cobrir toda a area com a imagem, porém ele corta a imagem
             contain - vai usar 1005 da imagem de fundo, porém sem cortar ou distorcer, causando faixas nas laterais ou na parte de cima e de baixo*/
+            /*
+            background-attachment: fixed;
+            /* fixed - fixa a imagem e apenas o texto que rola*/
+
+            /*shorthand - background (todos os comandos acima em um só)
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') no-repeat fixed;
+
         }
 
         main {
