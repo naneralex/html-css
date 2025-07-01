@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td.num{
@@ -24,9 +25,32 @@
             padding: 10px;
         }
 
+        /* Colocando cabeçalho fixo na página:
+
+        Na table colocar posicionamento RELATIVE.
+
+        na thead > tr > th colocar position STICKY
+        top 0 ou -1px
+        e o mesmo backgroud usado no th
+        */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        
+        /* Forma de deixar a tabela zebrada :nth-child(..) dentro do parentese coloca de quantas em quantas linhas quer que marque a linha 
+        pode usar também com linhas impar ou par usando:
+         odd - para impar
+         even - para par
+         */
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
         }
 
         caption {
@@ -61,7 +85,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 7%;">População</th>
             </tr>
         </thead>
 
