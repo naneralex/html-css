@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        picture > img {
+            max-width: 1920px;
+            display: block;
+            margin: auto;
+            position: absolute;
+        }
+
+        #astronauta {
+            padding-top: 200px;
+            display: block;
+            padding-left: 700px;
+            position: relative;
+        }
+        
+    
+    </style>
+
+</head>
+
+<body>
+
+        <article>
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="espaco-p.jpg" type="image/jpg">
+                <source media="(max-width: 1000px)" srcset="espaco-m.jpg" type="image/jpg">
+                <img src="espaco.jpg" alt="">
+            </picture>            
+
+        </article>
+
+        
+        <source media="(max-width: 500px)" srcset="astronauta.png" type="image/png">
+        <img id="astronauta" src="astronauta.png" alt="">
+   
+
+</body>
+</html>
