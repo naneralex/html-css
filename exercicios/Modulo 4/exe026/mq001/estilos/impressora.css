@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/*Esconde o menu na impressã */
+
+menu{
+    display: none;
+}
+
+/* exibir mensagem no final da impressão */
+
+article::after {
+    content: 'Esse artigo foi impresso através do site "tal"';
+}
+
+article {
+    width: 100%;
+}
